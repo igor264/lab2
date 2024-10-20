@@ -216,6 +216,7 @@ void get_from_file(std::ifstream& in, std::unordered_map<int, CS>& cs)
 			{
 				new_cs.NumberOfWorkshops = numb;
 			}
+			else { cout << "Error in file!!!\n"; return; }
 		}
 		else { cout << "Error in file!!!\n"; return; }
 
