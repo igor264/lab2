@@ -127,11 +127,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="log.cpp" />
     <ClCompile Include="menu.cpp" />
     <ClCompile Include="pipeline.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="log.h" />
     <ClInclude Include="menu.h" />
     <ClInclude Include="pipeline.h" />
   </ItemGroup>

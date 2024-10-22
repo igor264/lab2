@@ -1,0 +1,194 @@
+Pipe name entered: ljkwht io] jepo 
+Pipe length entered: 66
+Pipe diameter entered: 5
+Pipe repair status entered: 1
+Added new pipe with ID: 0
+Displayed all pipes.
+CS name entered: el;k joe o;hjpoei'[ jep 
+Number of workshops entered for CS: 3333
+Workshops in work for CS entered: 555
+Efficiency entered for CS: 11
+Added new CS with ID: 1
+Displayed all pipes.
+Displayed all CS.
+Filtering pipes by repair status: 1
+Pipe loaded from file: pipe 1
+Loaded pipelines from file: save.txt
+Pipe loaded from file: pipe 2
+Loaded pipelines from file: save.txt
+Pipe loaded from file: pipi 3
+Loaded pipelines from file: save.txt
+CS loaded from file: cs 1
+Loaded CS from file: save.txt
+Displayed all pipes.
+Displayed all CS.
+CS name entered: kukuuu
+Number of workshops entered for CS: 55
+Workshops in work for CS entered: 7
+Efficiency entered for CS: 5
+Added new CS with ID: 4
+Filtering pipes by name: kuu
+Filtering pipes by name: cs
+Pipe loaded from file: pipe 1
+Loaded pipelines from file: save.txt
+Pipe loaded from file: pipe 2
+Loaded pipelines from file: save.txt
+Pipe loaded from file: pipi 3
+Loaded pipelines from file: save.txt
+CS loaded from file: cs 1
+Loaded CS from file: save.txt
+Filtering pipes by name: pipe
+Displayed all pipes.
+Displayed all CS.
+Filtering pipes by name: pip
+Displayed all pipes.
+Displayed all CS.
+Displayed all CS.
+Workshops in work changed for CS: cs 1 to 1
+Updated CS with ID 3 to working workshops 1
+Displayed all pipes.
+Displayed all CS.
+Displayed all CS.
+Pipe loaded from file: pipe 1
+Loaded pipelines from file: save.txt
+Pipe loaded from file: pipe 2
+Loaded pipelines from file: save.txt
+Pipe loaded from file: pipi 3
+Loaded pipelines from file: save.txt
+CS loaded from file: cs 1
+Loaded CS from file: save.txt
+Displayed all CS.
+Deleted CS with ID: 3
+Displayed all pipes.
+Displayed all CS.
+Filtering pipes by name: pipe
+Pipe loaded from file: pipe 1
+Loaded pipelines from file: save.txt
+Pipe loaded from file: pipe 2
+Loaded pipelines from file: save.txt
+Pipe loaded from file: pipi 3
+Loaded pipelines from file: save.txt
+CS loaded from file: cs 1
+Loaded CS from file: save.txt
+Displayed all pipes.
+Displayed all CS.
+Filtering pipes by repair status: 1
+Pipe loaded from file: pipe 1
+Loaded pipelines from file: save.txt
+Pipe loaded from file: pipe 2
+Loaded pipelines from file: save.txt
+Pipe loaded from file: pipi 3
+Loaded pipelines from file: save.txt
+CS loaded from file: cs 1
+Loaded CS from file: save.txt
+Filtering pipes by name: p
+Pipe loaded from file: pipe 1
+Loaded pipelines from file: save.txt
+Pipe loaded from file: pipe 2
+Loaded pipelines from file: save.txt
+Pipe loaded from file: pipi 3
+Loaded pipelines from file: save.txt
+CS loaded from file: cs 1
+Loaded CS from file: save.txt
+Filtering pipes by name: pip
+Pipe loaded from file: pipe 1
+Loaded pipelines from file: save.txt
+Pipe loaded from file: pipe 2
+Loaded pipelines from file: save.txt
+Pipe loaded from file: pipi 3
+Loaded pipelines from file: save.txt
+CS loaded from file: cs 1
+Loaded CS from file: save.txt
+Filtering pipes by name: pip
+Pipe loaded from file: pipe 1
+Loaded pipelines from file: save.txt
+Pipe loaded from file: pipe 2
+Loaded pipelines from file: save.txt
+Pipe loaded from file: pipi 3
+Loaded pipelines from file: save.txt
+CS loaded from file: cs 1
+Loaded CS from file: save.txt
+Filtering pipes by name: pip
+Pipe loaded from file: pipe 1
+Loaded pipelines from file: save.txt
+Pipe loaded from file: pipe 2
+Loaded pipelines from file: save.txt
+Pipe loaded from file: pipi 3
+Loaded pipelines from file: save.txt
+CS loaded from file: cs 1
+Loaded CS from file: save.txt
+Filtering pipes by substring: pip
+Displayed all pipes.
+Deleted pipe with ID: 0
+Displayed all pipes.
+Displayed all CS.
+Displayed all pipes.
+Repair status changed for pipe: pipe 2 to 0
+Updated pipe with ID 1 to repair status 0
+Repair status changed for pipe: pipi 3 to 0
+Updated pipe with ID 2 to repair status 0
+Displayed all pipes.
+Displayed all CS.
+Displayed all CS.
+Workshops in work changed for CS: cs 1 to 3
+Updated CS with ID 3 to working workshops 3
+Filtering pipes by name: cs
+Pipe loaded from file: pipe 1
+Loaded pipelines from file: save.txt
+Pipe loaded from file: pipe 2
+Loaded pipelines from file: save.txt
+Pipe loaded from file: pipi 3
+Loaded pipelines from file: save.txt
+CS loaded from file: cs 1
+Loaded CS from file: save.txt
+Filtering pipes by name: 222
+Displayed all CS.
+Pipe loaded from file: pipe 1
+Loaded pipelines from file: save.txt
+Pipe loaded from file: pipe 2
+Loaded pipelines from file: save.txt
+Pipe loaded from file: pipi 3
+Loaded pipelines from file: save.txt
+CS loaded from file: cs 1
+Loaded CS from file: save.txt
+Displayed all CS.
+Workshops in work changed for CS: cs 1 to 55
+Updated CS with ID 3 to working workshops 55
+Exported data to file: save.txt
+Error: Could not open file ss
+Exported data to file: dd
+Pipe loaded from file: pipe 1
+Loaded pipelines from file: dd
+Pipe loaded from file: pipe 2
+Loaded pipelines from file: dd
+Pipe loaded from file: pipi 3
+Loaded pipelines from file: dd
+CS loaded from file: cs 1
+Loaded CS from file: dd
+Pipe loaded from file: pipe 1
+Loaded pipelines from file: save.txt
+Pipe loaded from file: pipe 2
+Loaded pipelines from file: save.txt
+Pipe loaded from file: pipi 3
+Loaded pipelines from file: save.txt
+CS loaded from file: cs 1
+Loaded CS from file: save.txt
+Displayed all pipes.
+Displayed all CS.
+Pipe name entered: truba1
+Pipe length entered: 1000
+Pipe diameter entered: 300
+Pipe repair status entered: 0
+Added new pipe with ID: 4
+Filtering pipes by substring: pip
+Filtering pipes by repair status: 0
+Displayed all pipes.
+Repair status changed for pipe: pipe 1 to 0
+Updated pipe with ID 0 to repair status 0
+Filtering pipes by repair status: 1
+CS name entered: cs 2
+Number of workshops entered for CS: 10
+Workshops in work for CS entered: 5
+Efficiency entered for CS: 50
+Added new CS with ID: 5
+Displayed all CS.

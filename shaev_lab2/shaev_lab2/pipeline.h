@@ -50,7 +50,8 @@ public:
     friend void file_out_cs(std::ofstream& out, const CS& cs);
     friend void get_from_file(std::ifstream& in, std::unordered_map<int, CS>& cs);
     friend void max_id();
-
+    friend void filter_cs_by_name(std::unordered_map<int, CS>& cs);
+    friend void change_cs(std::unordered_map<int, CS>& cs);
 
 };
 
