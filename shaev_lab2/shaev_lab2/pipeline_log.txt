@@ -192,3 +192,39 @@ Workshops in work for CS entered: 5
 Efficiency entered for CS: 50
 Added new CS with ID: 5
 Displayed all CS.
+Pipe loaded from file: pipe 1
+Loaded pipelines from file: save.txt
+Pipe loaded from file: pipe 2
+Loaded pipelines from file: save.txt
+Pipe loaded from file: pipi 3
+Loaded pipelines from file: save.txt
+CS loaded from file: cs 1
+Loaded CS from file: save.txt
+Filtering pipes by substring: pip
+Repair status changed for pipe: pipe 1 to 0
+Repair status changed for pipe: pipe 2 to 0
+Repair status changed for pipe: pipi 3 to 0
+Displayed all pipes.
+Displayed all CS.
+Pipe loaded from file: pipe 1
+Loaded pipelines from file: save.txt
+Pipe loaded from file: pipe 2
+Loaded pipelines from file: save.txt
+Pipe loaded from file: pipi 3
+Loaded pipelines from file: save.txt
+CS loaded from file: cs 1
+Loaded CS from file: save.txt
+CS name entered: okf o [
+Number of workshops entered for CS: 2222
+Workshops in work for CS entered: 33
+Efficiency entered for CS: 1
+Added new CS with ID: 4
+CS name entered: eeeee cs
+Number of workshops entered for CS: 13
+Workshops in work for CS entered: 10
+Efficiency entered for CS: 44
+Added new CS with ID: 5
+Filtering CS by work percentage: 50
+Workshops in work changed for CS: cs 1 to 111
+Workshops in work changed for CS: okf o [ to 111
+Filtering CS by work percentage: 50

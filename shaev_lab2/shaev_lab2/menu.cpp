@@ -28,13 +28,15 @@ short int menu()
 	cout << "11 - filter pipes by rapair\n";
 	cout << "12 - change pipes\n";
 	cout << "13 - change cs\n";
-	cout << "0 - exit\n";
 	cout << "14 - filter cs by name\n";
+	cout << "15 - filter cs by %\n";
+	cout << "0 - exit\n";
+	
 	cout << "--------------------------------------------------------------------\n";
 
 	short int menu_choice;
 
-	while (!(cin >> menu_choice)  || (cin.peek() != '\n') || (menu_choice < 0 || menu_choice > 14)) {
+	while (!(cin >> menu_choice)  || (cin.peek() != '\n') || (menu_choice < 0 || menu_choice > 15)) {
 		cin.clear();
 		cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
 		cout << "" << "Select correct item from menu:\n";

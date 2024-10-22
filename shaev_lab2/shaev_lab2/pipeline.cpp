@@ -274,11 +274,34 @@ void filter_pipes_by_name(std::unordered_map<int, Pipeline>& pipes)
     cout << "Enter the name or part of the name of the pipe to filter: ";
     cin >> name;
     log("Filtering pipes by substring: " + name);
+    vector<int> ids;
 
     for (const auto& p : pipes) {
         if (p.second.PipeName.find(name) != std::string::npos) {
             cout << p.second;
+            ids.push_back(p.second.PipeID);
         }
+    }
+
+    int ch;
+    cout << "" << "0 - menu:\n1 - chenge pipe\n";
+    while (!(cin >> ch) || (cin.peek() != '\n') || (ch < 0 || ch > 1)) {
+        cin.clear();
+        cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+        cout << "" << "Select correct item:\n";
+    };
+
+    if (ch == 0) { return; }
+    cout << "Enter repair\n";
+    while (!(cin >> ch) || (cin.peek() != '\n') || (ch < 0 || ch > 1)) {
+        cin.clear();
+        cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+        cout << "" << "Select correct item:\n";
+    };
+
+    for (const auto& id : ids)
+    {
+        ChangeRepair(pipes[id], ch);
     }
 }
 
@@ -289,24 +312,119 @@ void filter_pipes_by_repair(std::unordered_map<int, Pipeline>& pipes)
     cout << "Enter repair status (0 - working, 1 - on repairing): ";
     repair_status = correct_int(0, 1);
     log("Filtering pipes by repair status: " + std::to_string(repair_status));
+    vector<int> ids;
 
     for (const auto& p : pipes) {
         if (p.second.RepairIndicator == repair_status) {
             cout << p.second;
+            ids.push_back(p.second.PipeID);
         }
+    }
+
+    int ch;
+    cout << "" << "0 - menu:\n1 - chenge pipe\n";
+    while (!(cin >> ch) || (cin.peek() != '\n') || (ch < 0 || ch > 1)) {
+        cin.clear();
+        cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+        cout << "" << "Select correct item:\n";
+    };
+
+    if (ch == 0) { return; }
+    cout << "Enter repair\n";
+    while (!(cin >> ch) || (cin.peek() != '\n') || (ch < 0 || ch > 1)) {
+        cin.clear();
+        cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+        cout << "" << "Select correct item:\n";
+    };
+
+    for (const auto& id : ids)
+    {
+        ChangeRepair(pipes[id], ch);
     }
 }
 
 void filter_cs_by_name(std::unordered_map<int, CS>& cs)
 {
     string name;
-    cout << "Enter the name of the pipe to filter: ";
+    cout << "Enter the name of the cs to filter: ";
     cin >> name;
-    log("Filtering pipes by name: " + name);
+    log("Filtering cs by name: " + name);
+    vector<int> ids;
 
     for (const auto& p : cs) {
         if (p.second.CSName.find(name) != std::string::npos) {
             cout << p.second;
+            ids.push_back(p.second.CSID);
+        }
+    }
+    int ch;
+    cout << "" << "0 - menu:\n1 - chenge cs\n";
+    while (!(cin >> ch) || (cin.peek() != '\n') || (ch < 0 || ch > 1)) {
+        cin.clear();
+        cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+        cout << "" << "Select correct item:\n";
+    };
+
+    if (ch == 0) { return; }
+    cout << "Enter number of workshops in work\n";
+    while (!(cin >> ch) || (cin.peek() != '\n') || (ch < 0)) {
+        cin.clear();
+        cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+        cout << "" << "Select correct item:\n";
+    };
+
+    for (const auto& id : ids)
+    {
+        if (ChangeWorkshopsInWork(cs[id], ch) == -1)
+        {
+            cout << "error in workshops in cs id=" << id << endl;
+        }
+    }
+}
+
+
+void filter_cs_by_work_percentage(std::unordered_map<int, CS>& cs)
+{
+    int percentage;
+    cout << "Enter the work percentage to filter (0-100): ";
+    percentage = correct_int(0, 100);
+    log("Filtering CS by work percentage: " + std::to_string(percentage));
+
+    int choice;
+    cout << "Choose option: 1 - More than " << percentage << "%, 2 - Less than " << percentage << "%: ";
+    while (!(cin >> choice) || (cin.peek() != '\n') || (choice < 1 || choice > 2)) {
+        cin.clear();
+        cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+        cout << "Select correct option (1 or 2): ";
+    }
+
+    vector<int> ids;
+    for (const auto& p : cs) {
+        int current_percentage = (p.second.WorkshopsInWork * 100) / p.second.NumberOfWorkshops;
+        if ((choice == 1 && current_percentage > percentage) ||
+            (choice == 2 && current_percentage < percentage)) {
+            cout << p.second;
+            ids.push_back(p.second.CSID);
+        }
+    }
+
+    int edit_choice;
+    cout << "0 - menu\n1 - edit CS\n";
+    while (!(cin >> edit_choice) || (cin.peek() != '\n') || (edit_choice < 0 || edit_choice > 1)) {
+        cin.clear();
+        cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+        cout << "Select correct option (0 or 1): ";
+    }
+
+    if (edit_choice == 0) return;
+
+    cout << "Enter new number of workshops in work: ";
+    int new_workshops_in_work;
+    new_workshops_in_work = correct_int();
+
+    for (const auto& id : ids) {
+        if (ChangeWorkshopsInWork(cs[id], new_workshops_in_work) == -1) {
+            cout << "Error in workshops in CS ID=" << id << endl;
         }
     }
 }

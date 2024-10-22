@@ -3,7 +3,7 @@
 #include <unordered_map>
 #include <string>
 #include <sstream>
-#include "log.h" // Добавляем заголовочный файл для логирования
+#include "log.h"
 #include "pipeline.h"
 #include "menu.h"
 
@@ -47,6 +47,7 @@ int main()
         case 12: change_pipes(pipes); break;
         case 13: change_cs(cs); break;
         case 14: filter_cs_by_name(cs); break;
+        case 15: filter_cs_by_work_percentage(cs); break;
         case 0: return 0;
         }
     }

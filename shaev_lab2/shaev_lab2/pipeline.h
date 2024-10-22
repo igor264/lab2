@@ -52,6 +52,7 @@ public:
     friend void max_id();
     friend void filter_cs_by_name(std::unordered_map<int, CS>& cs);
     friend void change_cs(std::unordered_map<int, CS>& cs);
+    friend void filter_cs_by_work_percentage(std::unordered_map<int, CS>& cs);
 
 };
 
