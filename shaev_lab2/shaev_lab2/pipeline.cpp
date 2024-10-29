@@ -10,22 +10,15 @@ using namespace std;
 int Pipeline::MaxIDPipe = 0;
 int CS::MaxIDCS = 0;
 
-void max_id()
-{
-    Pipeline::MaxIDPipe = std::max(Pipeline::MaxIDPipe, CS::MaxIDCS);
-    CS::MaxIDCS = std::max(Pipeline::MaxIDPipe, CS::MaxIDCS);
-}
 
 Pipeline::Pipeline()
 {
     PipeID = MaxIDPipe++;
-    max_id();
 }
 
 CS::CS()
 {
     CSID = MaxIDCS++;
-    max_id();
 }
 
 static int correct_int(int min, int max)
@@ -381,7 +374,6 @@ void filter_cs_by_name(std::unordered_map<int, CS>& cs)
         }
     }
 }
-
 
 void filter_cs_by_work_percentage(std::unordered_map<int, CS>& cs)
 {

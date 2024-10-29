@@ -228,3 +228,80 @@ Filtering CS by work percentage: 50
 Workshops in work changed for CS: cs 1 to 111
 Workshops in work changed for CS: okf o [ to 111
 Filtering CS by work percentage: 50
+Filtering CS by work percentage: 11
+Pipe loaded from file: pipe 1
+Loaded pipelines from file: save.txt
+Pipe loaded from file: pipe 2
+Loaded pipelines from file: save.txt
+Pipe loaded from file: pipi 3
+Loaded pipelines from file: save.txt
+CS loaded from file: cs 1
+Loaded CS from file: save.txt
+Displayed all pipes.
+Displayed all CS.
+Displayed all pipes.
+Displayed all CS.
+CS name entered: css
+Number of workshops entered for CS: 88
+Workshops in work for CS entered: 80
+Efficiency entered for CS: 54
+Added new CS with ID: 1
+Filtering CS by work percentage: 50
+Workshops in work changed for CS: css to 88
+Displayed all pipes.
+Displayed all CS.
+Filtering CS by work percentage: 0
+Workshops in work changed for CS: cs 1 to 555
+Displayed all pipes.
+Displayed all CS.
+Pipe loaded from file: pipe 1
+Loaded pipelines from file: save.txt
+Pipe loaded from file: pipe 2
+Loaded pipelines from file: save.txt
+Pipe loaded from file: pipi 3
+Loaded pipelines from file: save.txt
+CS loaded from file: cs 1
+Loaded CS from file: save.txt
+Displayed all pipes.
+Displayed all CS.
+CS name entered: csss
+Number of workshops entered for CS: 111
+Workshops in work for CS entered: 100
+Efficiency entered for CS: 11
+Added new CS with ID: 1
+Filtering CS by work percentage: 50
+CS name entered: cssss
+Number of workshops entered for CS: 10
+Workshops in work for CS entered: 5
+Efficiency entered for CS: 50
+Added new CS with ID: 2
+Filtering CS by work percentage: 50
+Displayed all pipes.
+Displayed all CS.
+Displayed all CS.
+Deleted CS with ID: 2
+Displayed all pipes.
+Displayed all CS.
+CS name entered: cs4
+Number of workshops entered for CS: 10
+Workshops in work for CS entered: 5
+Efficiency entered for CS: 50
+Added new CS with ID: 3
+Displayed all pipes.
+Displayed all CS.
+Pipe loaded from file: pipe 1
+Loaded pipelines from file: save.txt
+Pipe loaded from file: pipe 2
+Loaded pipelines from file: save.txt
+Pipe loaded from file: pipi 3
+Loaded pipelines from file: save.txt
+CS loaded from file: cs 1
+Loaded CS from file: save.txt
+Filtering pipes by repair status: 0
+Repair status changed for pipe: pipe 2 to 1
+Filtering pipes by repair status: 1
+Repair status changed for pipe: pipe 1 to 0
+Repair status changed for pipe: pipe 2 to 0
+Repair status changed for pipe: pipi 3 to 0
+Displayed all pipes.
+Displayed all CS.
